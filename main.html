@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Vest</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"><img src="Assets/Images/WhatsApp Image 2025-05-16 at 19.07.48_c81669d4.jpg" alt="TrackVest Logo"></div>
+                <div class="logo-text">TRACK VEST</div>
+            </div>
+            
+            <div class="nav-item active" data-page="portfolio">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                </svg>
+                <span>Portfolio</span>
+            </div>
+            
+            <div class="nav-item" data-page="stock">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"/>
+                </svg>
+                <span>Stock</span>
+            </div>
+
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <span>Market</span>
+            </div>
+
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <span>Crypto</span>
+            </div>
+
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2-7h-3V2h-2v2H8V2H6v2H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2z"/>
+                </svg>
+                <span>Schedules</span>
+            </div>
+
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                <span>Payouts</span>
+            </div>
+
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.82,11.69,4.82,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
+                </svg>
+                <span>Settings</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Portfolio Page -->
+            <div id="portfolio-page">
+                <div class="header">
+                    <div>
+                        <div class="welcome-text">Hi Alper,</div>
+                        <h1 class="page-title">Welcome to Track Vest!</h1>
+                    </div>
+                    <input type="text" class="search-box" placeholder="Search">
+                </div>
+
+                <div class="portfolio-value">
+                    <div class="portfolio-label">Your total asset portfolio</div>
+                    <div class="portfolio-amount">
+                        € 2.240.560 
+                        <span class="positive-change">+7%</span>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-card">
+                        <div class="chart-value">$682.5</div>
+                        <div class="bar-chart">
+                            <div class="bar" style="height: 30%"></div>
+                            <div class="bar" style="height: 45%"></div>
+                            <div class="bar" style="height: 25%"></div>
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 35%"></div>
+                            <div class="bar active" style="height: 80%"></div>
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 50%"></div>
+                            <div class="bar" style="height: 35%"></div>
+                            <div class="bar" style="height: 45%"></div>
+                        </div>
+                    </div>
+
+                    <div class="assets-card">
+                        <div class="assets-title">My Assets</div>
+                        <div class="asset-item">
+                            <div class="asset-info">
+                                <div class="asset-icon" style="background: #000">AAPL</div>
+                                <span>AAPL</span>
+                            </div>
+                            <div class="asset-value">€302.81</div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-info">
+                                <div class="asset-icon" style="background: #dc2626">THY</div>
+                                <span>THY</span>
+                            </div>
+                            <div class="asset-value">€190,74</div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-info">
+                                <div class="asset-icon" style="background: #f59e0b">AMD</div>
+                                <span>AMD</span>
+                            </div>
+                            <div class="asset-value">€390,24</div>
+                        </div>
+                        <a href="#" class="view-all">See All Assets →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stock Page -->
+            <div id="stock-page" class="hidden">
+                <div class="header">
+                    <div class="stock-header">
+                        <div class="stock-icon">AAPL</div>
+                        <div class="stock-info">
+                            <h2>AAPL</h2>
+                            <div class="stock-price">346,113.45 €</div>
+                        </div>
+                    </div>
+                    <input type="text" class="search-box" placeholder="Search">
+                </div>
+
+                <div class="stock-chart">
+                    <div class="line-chart">
+                        <div class="chart-line"></div>
+                    </div>
+                </div>
+
+                <div class="bottom-section">
+                    <div class="chart-card">
+                        <div class="chart-value">$682.5 <span style="color: #10b981; font-size: 14px;">+2.84%</span></div>
+                        <div class="bar-chart">
+                            <div class="bar active" style="height: 40%"></div>
+                            <div class="bar active" style="height: 60%"></div>
+                            <div class="bar active" style="height: 45%"></div>
+                            <div class="bar active" style="height: 70%"></div>
+                            <div class="bar active" style="height: 80%"></div>
+                            <div class="bar active" style="height: 90%"></div>
+                            <div class="bar active" style="height: 50%"></div>
+                        </div>
+                    </div>
+
+                    <div class="history-card">
+                        <div class="history-title">History</div>
+                        <div class="history-item">
+                            <div>
+                                <div class="history-date">WED 08 Apr 2025</div>
+                                <div class="history-action">Buy order closed</div>
+                            </div>
+                        </div>
+                        <div class="history-item">
+                            <div>
+                                <div class="history-date">TUE 04 Apr 2025</div>
+                                <div class="history-action">Buy order closed</div>
+                            </div>
+                        </div>
+                        <div class="history-item">
+                            <div>
+                                <div class="history-date">MON 03 Apr 2025</div>
+                                <div class="history-action">Buy order closed</div>
+                            </div>
+                        </div>
+                        <a href="#" class="view-all">View all Overviews →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Market Page -->
+<div id="market-page" class="hidden">
+    <div class="header">
+        <div>
+            <div class="welcome-text">Market Overview</div>
+            <h1 class="page-title">Global Markets</h1>
+        </div>
+        <input type="text" class="search-box" placeholder="Search stocks...">
+    </div>
+
+    <div class="market-stats">
+        <div class="stat-card">
+            <div class="stat-label">S&P 500</div>
+            <div class="stat-value">4,185.47</div>
+            <div class="stat-change positive">+1.2%</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">NASDAQ</div>
+            <div class="stat-value">12,938.12</div>
+            <div class="stat-change positive">+0.8%</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">DOW JONES</div>
+            <div class="stat-value">33,745.69</div>
+            <div class="stat-change negative">-0.3%</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">FTSE 100</div>
+            <div class="stat-value">7,512.84</div>
+            <div class="stat-change positive">+0.5%</div>
+        </div>
+    </div>
+
+    <div class="market-sections">
+        <div class="market-section">
+            <div class="section-header">
+                <h3>Top Gainers</h3>
+                <span class="view-all-link">View All</span>
+            </div>
+            <div class="stock-list">
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <div class="stock-symbol">NVDA</div>
+                        <div class="stock-name">NVIDIA Corporation</div>
+                    </div>
+                    <div class="stock-price-info">
+                        <div class="stock-price">$428.92</div>
+                        <div class="stock-change positive">+8.2%</div>
+                    </div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <div class="stock-symbol">TSLA</div>
+                        <div class="stock-name">Tesla Inc</div>
+                    </div>
+                    <div class="stock-price-info">
+                        <div class="stock-price">$245.83</div>
+                        <div class="stock-change positive">+5.7%</div>
+                    </div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <div class="stock-symbol">AMD</div>
+                        <div class="stock-name">Advanced Micro Devices</div>
+                    </div>
+                    <div class="stock-price-info">
+                        <div class="stock-price">$118.45</div>
+                        <div class="stock-change positive">+4.3%</div>
+                    </div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <div class="stock-symbol">MSFT</div>
+                        <div class="stock-name">Microsoft Corporation</div>
+                    </div>
+                    <div class="stock-price-info">
+                        <div class="stock-price">$342.56</div>
+                        <div class="stock-change positive">+3.1%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="market-section">
+            <div class="section-header">
+                <h3>Top Losers</h3>
+                <span class="view-all-link">View All</span>
+            </div>
+            <div class="stock-list">
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <div class="stock-symbol">META</div>
+                        <div class="stock-name">Meta Platforms Inc</div>
+                    </div>
+                    <div class="stock-price-info">
+                        <div class="stock-price">$298.42</div>
+                        <div class="stock-change negative">-3.8%</div>
+                    </div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <div class="stock-symbol">NFLX</div>
+                        <div class="stock-name">Netflix Inc</div>
+                    </div>
+                    <div class="stock-price-info">
+                        <div class="stock-price">$423.15</div>
+                        <div class="stock-change negative">-2.9%</div>
+                    </div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <div class="stock-symbol">UBER</div>
+                        <div class="stock-name">Uber Technologies</div>
+                    </div>
+                    <div class="stock-price-info">
+                        <div class="stock-price">$56.78</div>
+                        <div class="stock-change negative">-2.4%</div>
+                    </div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <div class="stock-symbol">SNAP</div>
+                        <div class="stock-name">Snap Inc</div>
+                    </div>
+                    <div class="stock-price-info">
+                        <div class="stock-price">$12.34</div>
+                        <div class="stock-change negative">-1.8%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="market-chart-section">
+        <div class="chart-card">
+            <div class="chart-header">
+                <h3>Market Trends</h3>
+                <div class="time-selector">
+                    <button class="time-btn active">1D</button>
+                    <button class="time-btn">1W</button>
+                    <button class="time-btn">1M</button>
+                    <button class="time-btn">1Y</button>
+                </div>
+            </div>
+            <div class="market-chart">
+                <canvas id="marketChart" width="800" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- Cryptocurrency Page -->
+<div id="crypto-page" class="hidden">
+    <div class="header">
+        <div>
+            <div class="welcome-text">Cryptocurrency Market</div>
+            <h1 class="page-title">Digital Assets</h1>
+        </div>
+        <input type="text" class="search-box" placeholder="Search crypto...">
+    </div>
+
+    <div class="crypto-overview">
+        <div class="crypto-stat-card">
+            <div class="crypto-stat-label">Total Market Cap</div>
+            <div class="crypto-stat-value">$1.68T</div>
+            <div class="crypto-stat-change positive">+2.4%</div>
+        </div>
+        <div class="crypto-stat-card">
+            <div class="crypto-stat-label">24h Volume</div>
+            <div class="crypto-stat-value">$89.2B</div>
+            <div class="crypto-stat-change positive">+5.1%</div>
+        </div>
+        <div class="crypto-stat-card">
+            <div class="crypto-stat-label">BTC Dominance</div>
+            <div class="crypto-stat-value">42.3%</div>
+            <div class="crypto-stat-change negative">-0.8%</div>
+        </div>
+        <div class="crypto-stat-card">
+            <div class="crypto-stat-label">Active Cryptos</div>
+            <div class="crypto-stat-value">2,847</div>
+            <div class="crypto-stat-change positive">+12</div>
+        </div>
+    </div>
+
+    <div class="crypto-sections">
+        <div class="crypto-main-section">
+            <div class="section-header">
+                <h3>Top Cryptocurrencies</h3>
+                <div class="crypto-filter">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Favorites</button>
+                    <button class="filter-btn">DeFi</button>
+                    <button class="filter-btn">NFT</button>
+                </div>
+            </div>
+            <div class="crypto-table">
+                <div class="crypto-table-header">
+                    <div class="crypto-col-rank">#</div>
+                    <div class="crypto-col-name">Name</div>
+                    <div class="crypto-col-price">Price</div>
+                    <div class="crypto-col-change">24h</div>
+                    <div class="crypto-col-volume">Volume</div>
+                    <div class="crypto-col-market">Market Cap</div>
+                </div>
+                <div class="crypto-row">
+                    <div class="crypto-col-rank">1</div>
+                    <div class="crypto-col-name">
+                        <div class="crypto-icon">₿</div>
+                        <div>
+                            <div class="crypto-name">Bitcoin</div>
+                            <div class="crypto-symbol">BTC</div>
+                        </div>
+                    </div>
+                    <div class="crypto-col-price">$43,284.52</div>
+                    <div class="crypto-col-change positive">+2.34%</div>
+                    <div class="crypto-col-volume">$23.4B</div>
+                    <div class="crypto-col-market">$847.2B</div>
+                </div>
+                <div class="crypto-row">
+                    <div class="crypto-col-rank">2</div>
+                    <div class="crypto-col-name">
+                        <div class="crypto-icon">Ξ</div>
+                        <div>
+                            <div class="crypto-name">Ethereum</div>
+                            <div class="crypto-symbol">ETH</div>
+                        </div>
+                    </div>
+                    <div class="crypto-col-price">$2,547.89</div>
+                    <div class="crypto-col-change positive">+1.87%</div>
+                    <div class="crypto-col-volume">$12.8B</div>
+                    <div class="crypto-col-market">$306.4B</div>
+                </div>
+                <div class="crypto-row">
+                    <div class="crypto-col-rank">3</div>
+                    <div class="crypto-col-name">
+                        <div class="crypto-icon">●</div>
+                        <div>
+                            <div class="crypto-name">Binance Coin</div>
+                            <div class="crypto-symbol">BNB</div>
+                        </div>
+                    </div>
+                    <div class="crypto-col-price">$318.76</div>
+                    <div class="crypto-col-change negative">-0.92%</div>
+                    <div class="crypto-col-volume">$1.2B</div>
+                    <div class="crypto-col-market">$49.1B</div>
+                </div>
+                <div class="crypto-row">
+                    <div class="crypto-col-rank">4</div>
+                    <div class="crypto-col-name">
+                        <div class="crypto-icon">◐</div>
+                        <div>
+                            <div class="crypto-name">Cardano</div>
+                            <div class="crypto-symbol">ADA</div>
+                        </div>
+                    </div>
+                    <div class="crypto-col-price">$0.4823</div>
+                    <div class="crypto-col-change positive">+4.12%</div>
+                    <div class="crypto-col-volume">$892M</div>
+                    <div class="crypto-col-market">$16.8B</div>
+                </div>
+                <div class="crypto-row">
+                    <div class="crypto-col-rank">5</div>
+                    <div class="crypto-col-name">
+                        <div class="crypto-icon">◆</div>
+                        <div>
+                            <div class="crypto-name">Solana</div>
+                            <div class="crypto-symbol">SOL</div>
+                        </div>
+                    </div>
+                    <div class="crypto-col-price">$94.37</div>
+                    <div class="crypto-col-change positive">+6.78%</div>
+                    <div class="crypto-col-volume">$2.1B</div>
+                    <div class="crypto-col-market">$41.2B</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crypto-sidebar">
+            <div class="crypto-widget">
+                <h4>Fear & Greed Index</h4>
+                <div class="fear-greed-meter">
+                    <div class="meter-container">
+                        <div class="meter-fill" style="width: 68%"></div>
+                    </div>
+                    <div class="meter-value">68 - Greed</div>
+                </div>
+            </div>
+
+            <div class="crypto-widget">
+                <h4>Trending Coins</h4>
+                <div class="trending-list">
+                    <div class="trending-item">
+                        <div class="trending-info">
+                            <span class="trending-name">PEPE</span>
+                            <span class="trending-change positive">+24.5%</span>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-info">
+                            <span class="trending-name">SHIB</span>
+                            <span class="trending-change positive">+18.2%</span>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-info">
+                            <span class="trending-name">DOGE</span>
+                            <span class="trending-change positive">+12.8%</span>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="trending-info">
+                            <span class="trending-name">MATIC</span>
+                            <span class="trending-change negative">-3.4%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
