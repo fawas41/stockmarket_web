@@ -58,18 +58,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="form-container">
             <div class="form-title">Personal Information</div>
-            <form method="POST" action="signup.php">
             
             <div class="input-group">
-                <input type="text" placeholder="Full Name" name="name">
+                <input type="text" placeholder="Full Name">
             </div>
             
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email">
+                <input type="email" placeholder="Email">
             </div>
             
             <div class="input-group password-field">
-                <input type="password" placeholder="Password" name="password">
+                <input type="password" placeholder="Password">
                 <button class="password-toggle" id="passwordToggle">&#128065;</button>
             </div>
             
@@ -79,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
             
             <div class="input-group">
-                <input type="tel" placeholder="Phone Number (Optional)" name="phone">
+                <input type="tel" placeholder="Phone Number (Optional)">
             </div>
 
             <div class="input-group">
@@ -96,17 +95,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
             
             <div class="checkbox-group">
-                <input type="checkbox" id="privacyCheck" name="policy">
+                <input type="checkbox" id="privacyCheck">
                 <label for="privacyCheck">I understand the Privacy Statement</label>
             </div>
-            <button class="register-button" type="submit">Register</button>
-
         </div>
-        </form>
 
-        
+        <a href="login.html" style="text-decoration: none;"><button class="register-button">Register</button></a>
+
         <div class="bottom-links">
-            <a href="login.php">Already have an account? Sign in</a>
+            <a href="login.html">Already have an account? Sign in</a>
         </div>
 
         <div class="pagination">

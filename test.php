@@ -1,8 +1,10 @@
 <?php
-$host = "sql12.freesqldatabase.com";
-$db_user = "sql12782867";
-$db_pass = "F5cfCeCCeq";
-$db_name = "users";
+require 'env.php';
+
+$host =  $_ENV['DB_HOST'];
+$db_user = $_ENV['DB_USER'];
+$db_pass = $_ENV['DB_PASS'];
+$db_name = $_ENV['DB_NAME'];
 
 $conn = new mysqli($host, $db_user, $db_pass, $db_name);
 

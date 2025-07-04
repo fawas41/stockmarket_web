@@ -69,24 +69,22 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
 
         <div class="divider">Or</div>
-        <form method="POST" action="login.php" >
 
         <div class="input-group">
-            <input type="text" placeholder="Email/Phone Number" name="email">
+            <input type="text" placeholder="Email/Phone Number">
         </div>
 
         <div class="input-group password-field">
-            <input type="password" placeholder="Password" name="password">
+            <input type="password" placeholder="Password">
             <button class="password-toggle">&#128065;</button>
         </div>
         <br>
         <br>
-        <button class="login-button" type="submit">Log In</button>
-        </form>
 
-        
+        <a href="home.html" style="text-decoration: none;"><button class="login-button">Log In</button></a>
+
         <div class="bottom-links">
-            <a href="signup.php">Don't have account? Sign up</a>
+            <a href="signup.html">Don't have account? Sign up</a>
             <!-- <a href="#">Use Password</a> -->
         </div>
 

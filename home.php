@@ -28,10 +28,10 @@ if (!isset($_SESSION['user'])) {
             <nav>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Markets</a></li>
-                    <li><a href="#">Analysis</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="main.html">Market</a></li>
+                    <li><a href="main.html">Analysis</a></li>
+                    <li><a href="main.html">Portfolio</a></li>
+                    <li><a href="main.html">About</a></li>
                     <!-- <li><a href="#">Contact</a></li> -->
                 </ul>
             </nav>
@@ -70,14 +70,114 @@ if (!isset($_SESSION['user'])) {
                 <span class="icon icon-shield"></span>
                 <span>Security</span>
             </div>
-            <div class="dropdown-item">
+            <!-- <div class="dropdown-item">
                 <span class="icon icon-bell"></span>
-                <span>Notifications</span>
+                <span>Country</span>
+            </div> -->
+
+
+            <div class="dropdown-item has-submenu" data-submenu="country">
+    <span class="icon icon-bell"></span>
+    <span>Country</span>
+    <i class="fas fa-chevron-right submenu-arrow"></i>
+    <div class="submenu" id="countrySubmenu">
+        <div class="submenu-item" data-country="US">
+            <span class="country-flag"></span>
+            <div class="item-details">
+                <span>United States</span>
+                <span class="item-code">US</span>
             </div>
-            <div class="dropdown-item">
+        </div>
+        <div class="submenu-item" data-country="DE">
+            <span class="country-flag"></span>
+            <div class="item-details">
+                <span>Germany</span>
+                <span class="item-code">DE</span>
+            </div>
+        </div>
+        <div class="submenu-item" data-country="UK">
+            <span class="country-flag"></span>
+            <div class="item-details">
+                <span>United Kingdom</span>
+                <span class="item-code">UK</span>
+            </div>
+        </div>
+        <div class="submenu-item" data-country="JP">
+            <span class="country-flag"></span>
+            <div class="item-details">
+                <span>Japan</span>
+                <span class="item-code">JP</span>
+            </div>
+        </div>
+        <div class="submenu-item" data-country="CA">
+            <span class="country-flag"></span>
+            <div class="item-details">
+                <span>Canada</span>
+                <span class="item-code">CA</span>
+            </div>
+        </div>
+        <div class="submenu-item" data-country="AUD">
+            <span class="country-flag"></span>
+            <div class="item-details">
+                <span>Australia</span>
+                <span class="item-code">AUD</span>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- <div class="dropdown-item">
                 <span class="icon icon-lock"></span>
-                <span>Privacy</span>
+                <span>Currency</span>
+            </div> -->
+            <div class="dropdown-item has-submenu" data-submenu="currency">
+    <span class="icon icon-lock"></span>
+    <span>Currency</span>
+    <i class="fas fa-chevron-right submenu-arrow"></i>
+    <div class="submenu" id="currencySubmenu">
+        <div class="submenu-item" data-currency="USD">
+            <span class="currency-symbol">$</span>
+            <div class="item-details">
+                <span>US Dollar</span>
+                <span class="item-code">USD $</span>
             </div>
+        </div>
+        <div class="submenu-item" data-currency="EUR">
+            <span class="currency-symbol">€</span>
+            <div class="item-details">
+                <span>Euro</span>
+                <span class="item-code">EUR €</span>
+            </div>
+        </div>
+        <div class="submenu-item" data-currency="GBP">
+            <span class="currency-symbol">£</span>
+            <div class="item-details">
+                <span>British Pound</span>
+                <span class="item-code">GBP £</span>
+            </div>
+        </div>
+        <div class="submenu-item" data-currency="JPY">
+            <span class="currency-symbol">¥</span>
+            <div class="item-details">
+                <span>Japanese Yen</span>
+                <span class="item-code">JPY ¥</span>
+            </div>
+        </div>
+        <div class="submenu-item" data-currency="CAD">
+            <span class="currency-symbol">C$</span>
+            <div class="item-details">
+                <span>Canadian Dollar</span>
+                <span class="item-code">CAD C$</span>
+            </div>
+        </div>
+        <div class="submenu-item" data-currency="AUD">
+            <span class="currency-symbol">A$</span>
+            <div class="item-details">
+                <span>Australian Dollar</span>
+                <span class="item-code">AUD A$</span>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
 
         <div class="dropdown-section">
@@ -122,9 +222,9 @@ if (!isset($_SESSION['user'])) {
             <div class="container">
                 <ul style="list-style: none;">
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Markets</a></li>
-                    <li><a href="#">Analysis</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="main.html">Markets</a></li>
+                    <li><a href="main.html">Analysis</a></li>
+                    <li><a href="main.html">Portfolio</a></li>
                     <li><a href="#">About</a></li>
                     <!-- <li><a href="#">Contact</a></li> -->
                 </ul>
@@ -168,7 +268,7 @@ if (!isset($_SESSION['user'])) {
                                         <span class="item-description">The most purchased in the last week</span>
                                     </div>
                                 </div>
-                                <span class="item-price">235.93 $</span>
+                                <span class="item-price">98.54 $</span>
                             </li>
                             <li class="trending-item">
                                 <div class="item-info">
@@ -180,7 +280,7 @@ if (!isset($_SESSION['user'])) {
                                         <span class="item-description">The most added to watchlists</span>
                                     </div>
                                 </div>
-                                <span class="item-price">173.69 $</span>
+                                <span class="item-price">183.52 $</span>
                             </li>
                             <li class="trending-item">
                                 <div class="item-info">
@@ -192,7 +292,7 @@ if (!isset($_SESSION['user'])) {
                                         <span class="item-description">Unprecedented trend analysis</span>
                                     </div>
                                 </div>
-                                <span class="item-price">73,888 $</span>
+                                <span class="item-price">104,502.26 $</span>
                             </li>
                         </ul>
                     </div>
@@ -209,52 +309,48 @@ if (!isset($_SESSION['user'])) {
             <section class="what-to-buy">
                 <div class="section-header">
                     <h2 class="section-title">What's to buy</h2>
-                    <a href="#" class="see-all">See All <i class="fas fa-chevron-right"></i></a>
+                    <a href="main.html" class="see-all">See All <i class="fas fa-chevron-right"></i></a>
                 </div>
                 <div class="stock-grid">
-                    <div class="stock-card one">
+                    <div class="stock-card" style="background-color: #A6A6A6;">
                         <div class="stock-symbol">AAPL</div>
-                        <div class="stock-price">$185.73</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <div class="stock-card two">
+                    <div class="stock-card" style="background-color: #000000;">
                         <div class="stock-symbol">TSLA</div>
-                        <div class="stock-price">$195.52</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <div class="stock-card three">
-                        <div class="stock-symbol">FB</div>
-                        <div class="stock-price">$487.63</div>
+                    <div class="stock-card" style="background-color: #4267B2;">
+                        <div class="stock-symbol">META</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <div class="stock-card four">
+                    <div class="stock-card" style="background-color: #00ADEF;">
                         <div class="stock-symbol">MSFT</div>
-                        <div class="stock-price">$325.14</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <div class="stock-card five">
+                    <div class="stock-card" style="background-color: #f44336;">
                         <div class="stock-symbol">NVDA</div>
-                        <div class="stock-price">$678.69</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <div class="stock-card six">
+                    <div class="stock-card" style="background-color: #FF5700;">
                         <div class="stock-symbol">JD</div>
-                        <div class="stock-price">$36.87</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <div class="stock-card seven">
+                    <div class="stock-card" style="background-color: #E50914;">
                         <div class="stock-symbol">NFLX</div>
-                        <div class="stock-price">$610.17</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <div class="stock-card eight">
+                    <div class="stock-card" style="background-color: #00C853;">
                         <div class="stock-symbol">SHOP</div>
-                        <div class="stock-price">$102.27</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <div class="stock-card nine">
+                    <div class="stock-card" style="background-color: #0087DC;">
                         <div class="stock-symbol">ABT</div>
-                        <div class="stock-price">$109.67</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
-                    <!-- <div class="stock-card">
-                        <div class="stock-symbol">INTC</div>
-                        <div class="stock-price">$43.86</div>
-                    </div> -->
-                    <div class="stock-card ten">
+                    <div class="stock-card" style="background-color: #ED1C24;">
                         <div class="stock-symbol">AMD</div>
-                        <div class="stock-price">$169.56</div>
+                        <div class="stock-price">$0.00</div>
                     </div>
                 </div>
             </section>
@@ -297,6 +393,7 @@ if (!isset($_SESSION['user'])) {
                             now expecting an increase of only 1.1 million bpd, citing economic weakness.
                         </p>
                         <div class="news-time">8 hours ago</div>
+                        <a href="https://www.cnbc.com/world/?region=world" class="read-more">See All</a>
                     </div>
                 </div>
             </section>
@@ -332,8 +429,77 @@ if (!isset($_SESSION['user'])) {
                 // Add functionality for each menu item here
             });
         });
+// cavsjnvckjn
+        const submenuItems = document.querySelectorAll('.has-submenu');
+
+submenuItems.forEach(item => {
+    const submenu = item.querySelector('.submenu');
+    const arrow = item.querySelector('.submenu-arrow');
+    
+    item.addEventListener('mouseenter', function() {
+        // Close other submenus
+        document.querySelectorAll('.submenu').forEach(otherSubmenu => {
+            if (otherSubmenu !== submenu) {
+                otherSubmenu.classList.remove('show');
+            }
+        });
+        document.querySelectorAll('.submenu-arrow').forEach(otherArrow => {
+            if (otherArrow !== arrow) {
+                otherArrow.style.transform = 'rotate(0deg)';
+            }
+        });
+        
+        // Show current submenu
+        submenu.classList.add('show');
+        arrow.style.transform = 'rotate(90deg)';
+    });
+    
+    item.addEventListener('mouseleave', function() {
+        setTimeout(() => {
+            if (!submenu.matches(':hover') && !item.matches(':hover')) {
+                submenu.classList.remove('show');
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }, 100);
+    });
+    
+    submenu.addEventListener('mouseenter', function() {
+        submenu.classList.add('show');
+        arrow.style.transform = 'rotate(90deg)';
+    });
+    
+    submenu.addEventListener('mouseleave', function() {
+        submenu.classList.remove('show');
+        arrow.style.transform = 'rotate(0deg)';
+    });
+});
+
+// Handle submenu item clicks
+document.querySelectorAll('.submenu-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const countryCode = this.getAttribute('data-country');
+        const currencyCode = this.getAttribute('data-currency');
+        
+        if (countryCode) {
+            console.log('Selected country:', countryCode);
+            // Add your country selection logic here
+        }
+        
+        if (currencyCode) {
+            console.log('Selected currency:', currencyCode);
+            // Add your currency selection logic here
+        }
+        
+        // Close dropdowns after selection
+        document.getElementById('profileDropdown').classList.remove('show');
+        document.querySelectorAll('.submenu').forEach(submenu => {
+            submenu.classList.remove('show');
+        });
+    });
+});
     </script>
   <script src="home.js"></script>
 
 </body>
 </html>
+

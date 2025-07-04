@@ -20,7 +20,7 @@
             </ul>
         </nav>
         
-        <a href="signup.php" class="sign-in-btn">
+        <a href="signup.html" class="sign-in-btn">
             <span>Sign In</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M9 18l6-6-6-6"/>
@@ -191,7 +191,7 @@
   .footer {
             padding: 40px;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 30px;
             margin-top: 150px;
         }
@@ -200,6 +200,13 @@
             font-size: 18px;
             margin-bottom: 20px;
             color: #333;
+        }
+
+        .footer-col p{
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 10px;
         }
 
         .footer-col ul {
@@ -221,8 +228,9 @@
         }
 
         .footer-col.address {
-            grid-column: 4;
+            grid-column: 5;
             text-align: right;
+            margin-top: 50px;
         }
 
         .address p {
